@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    color:darkred;
+    text-indent: 15px;
+}

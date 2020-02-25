@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}lire:{{ titre }}{% endblock %}
+
+{# pour afficher des variables#}
+{% block body %}
+    {{ titre }} <br>
+
+
+    Lorem ipsum dolor sit amet, sequi sit! mollitia nam, nihil quas quidem sed, voluptate.<br>
+    {{ maVariable }}
+
+    {#pour les blocs de logique if boucles etc#}
+        {% for comment in comments %}
+
+            {# c'est une boucle, comment =chaque entrée du tableau associatif#}
+            <p>{{ comment }}</p>
+        {% endfor %}
+
+    <p>il y a {{ comments|length }} commentaires.</p>
+
+    {#je teste les commentaires#}
+{% endblock %}
+

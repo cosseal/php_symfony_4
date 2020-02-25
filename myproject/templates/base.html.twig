@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Mon blog{% endblock %}</title>
+        {% block stylesheets %}<link rel="stylesheet" href="{{asset('css/style.css')}}">{% endblock %}
+    </head>
+    <body>
+        <nav>
+            <a href="{{ path('app_article_homepage') }}">Home</a>
+            <a href="/articles/Upto">Article Upto</a>
+        </nav>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
