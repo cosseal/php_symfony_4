@@ -7,10 +7,12 @@
     </head>
     <body>
         <nav>
-            <a href="{{ path('app_article_homepage') }}">Home</a>
-            <a href="/articles/Upto">Article Upto</a>
+            <a href="{{ path('app_homepage') }}">Home</a>
+            <a href="{{ path('article_show', {titre:'Mon super article'}) }}">Article Upto</a>
         </nav>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
+
+
     </body>
 </html>
